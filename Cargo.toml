@@ -1,0 +1,19 @@
+[package]
+name = "notion-calendar-fermyon"
+authors = ["Daniel Hahne <d@niel.re>"]
+description = "Return calendar in ical format."
+version = "0.2.0"
+edition = "2021"
+
+[lib]
+crate-type = [ "cdylib" ]
+
+[dependencies]
+anyhow = "1"
+bytes = "1"
+http = "0.2"
+notion-calendar = { git = "https://github.com/trobanga/notion-calendar" }
+spin-sdk = { git = "https://github.com/fermyon/spin", tag = "v2.1.0" }
+uuid = "1.5.0"
+
+[workspace]

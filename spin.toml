@@ -1,0 +1,26 @@
+spin_manifest_version = 2
+
+[application]
+name = "notion-calendar-fermyon"
+version = "1.0.0"
+description = "Use notian-calender with a spin."
+
+[[trigger.http]]
+route = "/..."
+component = "notion-calendar-fermyon"
+
+[variables]
+notion_api_token = { required = true }
+notion_db_id = { required = true }
+ical_prod_id = { default = "NotionCalendar" }
+
+[component.notion-calendar-fermyon]
+source = "target/wasm32-wasi/release/notion_calendar_fermyon.wasm"
+allowed_outbound_hosts = ["https://api.notion.com"]
+[component.notion-calendar-fermyon.variables]
+notion_api_token = "{{ notion_api_token }}"
+notion_db_id = "{{ notion_db_id }}"
+ical_prod_id = "{{ ical_prod_id }}"
+[component.notion-calendar-fermyon.build]
+command = "cargo build --target wasm32-wasi --release"
+watch = ["src/**/*.rs", "Cargo.toml"]

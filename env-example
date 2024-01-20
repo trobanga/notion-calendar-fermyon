@@ -1,0 +1,3 @@
+SPIN_VARIABLE_NOTION_API_TOKEN="notion api token"
+SPIN_VARIABLE_NOTION_DB_ID="Notion Database ID you want to calendarize"
+SPIN_VARIABLE_ICAL_PROD_ID="[optional] ical prod id aka the name of your calendar"
