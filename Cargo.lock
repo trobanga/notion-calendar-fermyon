@@ -596,8 +596,8 @@ dependencies = [
 
 [[package]]
 name = "notion-calendar"
-version = "0.2.0"
-source = "git+https://github.com/trobanga/notion-calendar#79182ad330d7e5ad07ae2a14940548d75ce340a3"
+version = "0.3.0"
+source = "git+https://github.com/trobanga/notion-calendar#f8174667196efd244edca2f985f811fad55dae2a"
 dependencies = [
  "anyhow",
  "chrono",
@@ -610,7 +610,7 @@ dependencies = [
 
 [[package]]
 name = "notion-calendar-fermyon"
-version = "0.2.0"
+version = "0.0.0"
 dependencies = [
  "anyhow",
  "bytes",
