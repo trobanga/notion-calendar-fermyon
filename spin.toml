@@ -2,7 +2,7 @@ spin_manifest_version = 2
 
 [application]
 name = "notion-calendar-fermyon"
-version = "1.0.0"
+version = "1.1.0"
 description = "Use notian-calender with a spin."
 
 [[trigger.http]]
