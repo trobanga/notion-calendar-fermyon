@@ -313,7 +313,7 @@ dependencies = [
  "futures-core",
  "futures-sink",
  "futures-util",
- "http 0.2.11",
+ "http",
  "indexmap",
  "slab",
  "tokio",
@@ -348,24 +348,13 @@ dependencies = [
 ]
 
 [[package]]
-name = "http"
-version = "1.0.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "b32afd38673a8016f7c9ae69e5af41a58f81b1d31689040f2f1959594ce194ea"
-dependencies = [
- "bytes",
- "fnv",
- "itoa",
-]
-
-[[package]]
 name = "http-body"
 version = "0.4.6"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "7ceab25649e9960c0311ea418d17bee82c0dcec1bd053b5f9a66e265a693bed2"
 dependencies = [
  "bytes",
- "http 0.2.11",
+ "http",
  "pin-project-lite",
 ]
 
@@ -392,7 +381,7 @@ dependencies = [
  "futures-core",
  "futures-util",
  "h2",
- "http 0.2.11",
+ "http",
  "http-body",
  "httparse",
  "httpdate",
@@ -584,7 +573,7 @@ version = "0.5.1"
 source = "git+https://github.com/trobanga/notion.git#7830a12c2b4f638b752f09a67ace06cbc6abdb9d"
 dependencies = [
  "chrono",
- "http 0.2.11",
+ "http",
  "reqwest",
  "serde",
  "serde_json",
@@ -614,7 +603,7 @@ version = "0.0.0"
 dependencies = [
  "anyhow",
  "bytes",
- "http 1.0.0",
+ "http",
  "notion-calendar",
  "spin-sdk",
  "uuid",
@@ -751,7 +740,7 @@ dependencies = [
  "futures-core",
  "futures-util",
  "h2",
- "http 0.2.11",
+ "http",
  "http-body",
  "hyper",
  "hyper-tls",
@@ -954,7 +943,7 @@ source = "git+https://github.com/fermyon/spin?tag=v2.1.0#4ca3a56153a1d85b176ffd0
 dependencies = [
  "anyhow",
  "bytes",
- "http 0.2.11",
+ "http",
  "proc-macro2",
  "quote",
  "syn 1.0.109",
@@ -970,7 +959,7 @@ dependencies = [
  "bytes",
  "form_urlencoded",
  "futures",
- "http 0.2.11",
+ "http",
  "once_cell",
  "routefinder",
  "serde",
